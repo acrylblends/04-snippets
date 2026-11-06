@@ -1,17 +1,22 @@
 # Snippet Manager
 
-A developer snippet vault with language-aware source previews, tags, reusable variables and fast search.
+A developer's snippet vault: 128 reusable code snippets with tags, variables, syntax-coloured previews, search and collections. Composed from Cordis plugins: the snippet library, the page shell, the library, the editor, collections and the language settings.
 
-An ACRYL Blends blueprint for the **Developer** category (`acrylblends.snippets`, category 04 of 100).
-
-Status: designed, being built. `design/spec.md` is the specification and `design/mockup.html` the mockup (open it in a browser). The app itself,
-composed from Cordis plugins (one `plugins/<feature>/` folder and one `blend.yaml` row per feature), lands here when it passes review.
-
-When it is ready you will start it with:
+## Run it
 
 ```sh
-npm create acrylblends@latest my-app -- --from acrylblends.snippets
-cd my-app && npm install && npm run dev
+npm install
+npm start
 ```
 
-Listed on https://acrylblends.github.io/blends and https://acryl.dev/blends.
+Open the address it prints. `npm test` runs the tests (node:test; no network, no key).
+
+## What to ask the chat next
+
+- Add a collection for database migrations and put the SQL snippets in it.
+- Show the code with its {{variables}} filled from the form and copy it.
+- Add a new language and the extension its snippets get in Settings > Languages.
+
+## Screenshot
+
+![Snippet Manager](docs/screenshot.png)
